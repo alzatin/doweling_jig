@@ -7,13 +7,11 @@
   "ioValues": [
     {
       "name": "Width",
-      "ioValue": 2,
-      "currentEquation": "2"
+      "ioValue": 2
     },
     {
       "name": "DfromEdge",
-      "ioValue": 0.5,
-      "currentEquation": ".5"
+      "ioValue": 0.5
     }
   ],
   "topLevel": true,
@@ -33,14 +31,14 @@
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.27639751552795033,
+      "y": 0.15384615384615385,
       "uniqueID": "id-21",
       "name": "Width"
     },
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.4316770186335404,
+      "y": 0.24615384615384617,
       "uniqueID": "id-25",
       "name": "DfromEdge"
     },
@@ -52,13 +50,11 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 2,
-          "currentEquation": "2"
+          "ioValue": 2
         },
         {
           "name": "y length",
-          "ioValue": 2,
-          "currentEquation": "2"
+          "ioValue": 2
         }
       ]
     },
@@ -74,8 +70,7 @@
         },
         {
           "name": "height",
-          "ioValue": 0.25,
-          "currentEquation": ".25"
+          "ioValue": 0.25
         }
       ]
     },
@@ -87,8 +82,7 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 1,
-          "currentEquation": "1"
+          "ioValue": 1
         },
         {
           "name": "y length",
@@ -108,18 +102,15 @@
         },
         {
           "name": "xDist",
-          "ioValue": -0.5,
-          "currentEquation": "-.5"
+          "ioValue": -0.5
         },
         {
           "name": "yDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "zDist",
-          "ioValue": -1,
-          "currentEquation": "-1"
+          "ioValue": -1
         }
       ]
     },
@@ -151,8 +142,7 @@
         },
         {
           "name": "height",
-          "ioValue": 1,
-          "currentEquation": "1"
+          "ioValue": 1
         }
       ]
     },
@@ -164,8 +154,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 0.5,
-          "currentEquation": ".5"
+          "ioValue": 0.5
         }
       ]
     },
@@ -181,8 +170,7 @@
         },
         {
           "name": "height",
-          "ioValue": 3,
-          "currentEquation": "3"
+          "ioValue": 3
         }
       ]
     },
@@ -202,13 +190,11 @@
         },
         {
           "name": "y-axis degrees",
-          "ioValue": 90,
-          "currentEquation": "90"
+          "ioValue": 90
         },
         {
           "name": "z-axis degrees",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         }
       ]
     },
@@ -224,8 +210,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": -2,
-          "currentEquation": "-2"
+          "ioValue": -2
         },
         {
           "name": "yDist",
