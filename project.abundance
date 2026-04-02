@@ -16,8 +16,8 @@
     },
     {
       "name": "HoleDiameter",
-      "ioValue": 0.5,
-      "currentEquation": "1/2"
+      "ioValue": 0.375,
+      "currentEquation": "3/8"
     }
   ],
   "topLevel": true,
@@ -160,7 +160,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 0.5
+          "ioValue": 0.375
         }
       ]
     },
@@ -303,11 +303,11 @@
       "ioValues": [
         {
           "name": "Font Size",
-          "ioValue": 0.5
+          "ioValue": 0.3333333333333333
         },
         {
           "name": "Text",
-          "ioValue": "D:0.5",
+          "ioValue": "HD:0.375",
           "currentEquation": "Lorem Ipsum"
         },
         {
@@ -321,31 +321,31 @@
     },
     {
       "atomType": "Code",
-      "x": 0.12239221140472879,
-      "y": 0.8167701863354037,
+      "x": 0.12517385257301808,
+      "y": 0.7950310559006211,
       "uniqueID": "id-147",
       "ioValues": [
         {
           "name": "holeDiam",
-          "ioValue": 0.5
+          "ioValue": 0.375
         }
       ],
       "codeVersion": 1,
-      "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"holeDiam\", type: \"number\", defaultValue: null },\n];\n\nreturn \"D:\" + holeDiam.toString()\n"
+      "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"holeDiam\", type: \"number\", defaultValue: null },\n];\n\nreturn \"HD:\" + holeDiam.toString()\n"
     },
     {
       "atomType": "Equation",
       "x": 0.14534075104311545,
       "y": 0.562111801242236,
       "uniqueID": "id-153",
-      "name": "x /4",
+      "name": "x /6",
       "ioValues": [
         {
           "name": "x",
           "ioValue": 2
         }
       ],
-      "currentEquation": "x /4"
+      "currentEquation": "x /6"
     },
     {
       "atomType": "Move",
@@ -359,7 +359,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": -0.75
+          "ioValue": -0.6666666666666666
         },
         {
           "name": "yDist",
@@ -375,17 +375,17 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.2517385257301808,
-      "y": 0.4472049689440994,
+      "x": 0.24408901251738527,
+      "y": 0.43788819875776397,
       "uniqueID": "id-163",
-      "name": "-x*1.5",
+      "name": "-x*2",
       "ioValues": [
         {
           "name": "x",
-          "ioValue": 0.5
+          "ioValue": 0.3333333333333333
         }
       ],
-      "currentEquation": "-x*1.5"
+      "currentEquation": "-x*2"
     },
     {
       "atomType": "Extrude",
