@@ -11,12 +11,13 @@
     },
     {
       "name": "DfromEdge",
-      "ioValue": 0.5
+      "ioValue": 0.5,
+      "currentEquation": "0.5"
     },
     {
       "name": "HoleDiameter",
-      "ioValue": 0.25,
-      "currentEquation": ".25"
+      "ioValue": 0.5,
+      "currentEquation": "1/2"
     }
   ],
   "topLevel": true,
@@ -159,7 +160,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 0.25
+          "ioValue": 0.5
         }
       ]
     },
@@ -306,7 +307,7 @@
         },
         {
           "name": "Text",
-          "ioValue": "0.25",
+          "ioValue": "D:0.5",
           "currentEquation": "Lorem Ipsum"
         },
         {
@@ -320,17 +321,17 @@
     },
     {
       "atomType": "Code",
-      "x": 0.11404728789986093,
-      "y": 0.8074534161490683,
+      "x": 0.12239221140472879,
+      "y": 0.8167701863354037,
       "uniqueID": "id-147",
       "ioValues": [
         {
           "name": "holeDiam",
-          "ioValue": 0.25
+          "ioValue": 0.5
         }
       ],
       "codeVersion": 1,
-      "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"holeDiam\", type: \"number\", defaultValue: null },\n];\n\nreturn holeDiam.toString()\n"
+      "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"holeDiam\", type: \"number\", defaultValue: null },\n];\n\nreturn \"D:\" + holeDiam.toString()\n"
     },
     {
       "atomType": "Equation",
@@ -348,8 +349,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.36995827538247567,
-      "y": 0.5807453416149069,
+      "x": 0.36856745479833103,
+      "y": 0.5652173913043479,
       "uniqueID": "id-157",
       "ioValues": [
         {
@@ -358,11 +359,12 @@
         },
         {
           "name": "xDist",
-          "ioValue": -0.3333333333333333
+          "ioValue": -0.75
         },
         {
           "name": "yDist",
-          "ioValue": 0
+          "ioValue": 0,
+          "currentEquation": "0"
         },
         {
           "name": "zDist",
@@ -373,17 +375,17 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.239221140472879,
-      "y": 0.48757763975155277,
+      "x": 0.2517385257301808,
+      "y": 0.4472049689440994,
       "uniqueID": "id-163",
-      "name": "-x/1.5",
+      "name": "-x*1.5",
       "ioValues": [
         {
           "name": "x",
           "ioValue": 0.5
         }
       ],
-      "currentEquation": "-x/1.5"
+      "currentEquation": "-x*1.5"
     },
     {
       "atomType": "Extrude",
