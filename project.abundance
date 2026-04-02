@@ -12,6 +12,11 @@
     {
       "name": "DfromEdge",
       "ioValue": 0.5
+    },
+    {
+      "name": "HoleDiameter",
+      "ioValue": 0.25,
+      "currentEquation": ".25"
     }
   ],
   "topLevel": true,
@@ -31,21 +36,21 @@
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.15384615384615385,
+      "y": 0.2236024844720497,
       "uniqueID": "id-21",
       "name": "Width"
     },
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.24615384615384617,
+      "y": 0.3447204968944099,
       "uniqueID": "id-25",
       "name": "DfromEdge"
     },
     {
       "atomType": "Rectangle",
-      "x": 0.2698191933240612,
-      "y": 0.32919254658385094,
+      "x": 0.3101529902642559,
+      "y": 0.2173913043478261,
       "uniqueID": "id-30",
       "ioValues": [
         {
@@ -60,8 +65,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.4269819193324061,
-      "y": 0.3322981366459627,
+      "x": 0.480528511821975,
+      "y": 0.18012422360248448,
       "uniqueID": "id-35",
       "ioValues": [
         {
@@ -76,8 +81,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.25382475660639775,
-      "y": 0.5372670807453416,
+      "x": 0.30806675938803896,
+      "y": 0.36645962732919257,
       "uniqueID": "id-40",
       "ioValues": [
         {
@@ -92,8 +97,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.36926286509040335,
-      "y": 0.577639751552795,
+      "x": 0.4436717663421419,
+      "y": 0.36024844720496896,
       "uniqueID": "id-44",
       "ioValues": [
         {
@@ -116,8 +121,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.6404728789986092,
-      "y": 0.3726708074534162,
+      "x": 0.6571627260083449,
+      "y": 0.2546583850931677,
       "uniqueID": "id-50",
       "ioValues": [
         {
@@ -132,8 +137,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.5027816411682893,
-      "y": 0.5,
+      "x": 0.5479833101529903,
+      "y": 0.4161490683229814,
       "uniqueID": "id-54",
       "ioValues": [
         {
@@ -148,13 +153,13 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.24130737134909594,
-      "y": 0.8416149068322982,
+      "x": 0.2524339360222531,
+      "y": 0.8198757763975155,
       "uniqueID": "id-59",
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 0.5
+          "ioValue": 0.25
         }
       ]
     },
@@ -224,8 +229,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.7406119610570236,
-      "y": 0.5931677018633541,
+      "x": 0.7510431154381085,
+      "y": 0.49689440993788814,
       "uniqueID": "id-78",
       "ioValues": [
         {
@@ -254,8 +259,8 @@
     },
     {
       "atomType": "Export",
-      "x": 0.833796940194715,
-      "y": 0.35403726708074534,
+      "x": 0.8734353268428373,
+      "y": 0.28260869565217395,
       "uniqueID": "id-86",
       "ioValues": [
         {
@@ -281,6 +286,137 @@
       "resolution": 96,
       "importIndex": 0,
       "partName": "doweling_jig"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.5496894409937888,
+      "uniqueID": "id-139",
+      "name": "HoleDiameter"
+    },
+    {
+      "atomType": "Text",
+      "x": 0.21835883171070933,
+      "y": 0.6863354037267081,
+      "uniqueID": "id-142",
+      "ioValues": [
+        {
+          "name": "Font Size",
+          "ioValue": 0.5
+        },
+        {
+          "name": "Text",
+          "ioValue": "0.25",
+          "currentEquation": "Lorem Ipsum"
+        },
+        {
+          "name": "Font Family",
+          "ioValue": "ROBOTO",
+          "currentEquation": "ROBOTO"
+        }
+      ],
+      "fontFamily": "ROBOTO",
+      "selectedFontIndex": 0
+    },
+    {
+      "atomType": "Code",
+      "x": 0.11404728789986093,
+      "y": 0.8074534161490683,
+      "uniqueID": "id-147",
+      "ioValues": [
+        {
+          "name": "holeDiam",
+          "ioValue": 0.25
+        }
+      ],
+      "codeVersion": 1,
+      "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"holeDiam\", type: \"number\", defaultValue: null },\n];\n\nreturn holeDiam.toString()\n"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.14534075104311545,
+      "y": 0.562111801242236,
+      "uniqueID": "id-153",
+      "name": "x /4",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 2
+        }
+      ],
+      "currentEquation": "x /4"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.36995827538247567,
+      "y": 0.5807453416149069,
+      "uniqueID": "id-157",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": -0.3333333333333333
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0.2,
+          "currentEquation": ".20"
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.239221140472879,
+      "y": 0.48757763975155277,
+      "uniqueID": "id-163",
+      "name": "-x/1.5",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 0.5
+        }
+      ],
+      "currentEquation": "-x/1.5"
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.4617524339360223,
+      "y": 0.5559006211180124,
+      "uniqueID": "id-167",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 0.5,
+          "currentEquation": ".5"
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.758692628650904,
+      "y": 0.7298136645962733,
+      "uniqueID": "id-171",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "geometry2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -293,6 +429,11 @@
       "ap2Name": "y length",
       "ap1ID": "id-21",
       "ap2ID": "id-40"
+    },
+    {
+      "ap2Name": "x",
+      "ap1ID": "id-21",
+      "ap2ID": "id-153"
     },
     {
       "ap2Name": "x",
@@ -350,19 +491,69 @@
       "ap2ID": "id-78"
     },
     {
-      "ap2Name": "geometry",
+      "ap2Name": "geometry1",
       "ap1ID": "id-78",
-      "ap2ID": "id-86"
-    },
-    {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-78",
-      "ap2ID": "id-2"
+      "ap2ID": "id-171"
     },
     {
       "ap2Name": "zDist",
       "ap1ID": "id-82",
       "ap2ID": "id-72"
+    },
+    {
+      "ap2Name": "diameter",
+      "ap1ID": "id-139",
+      "ap2ID": "id-59"
+    },
+    {
+      "ap2Name": "holeDiam",
+      "ap1ID": "id-139",
+      "ap2ID": "id-147"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-142",
+      "ap2ID": "id-157"
+    },
+    {
+      "ap2Name": "Text",
+      "ap1ID": "id-147",
+      "ap2ID": "id-142"
+    },
+    {
+      "ap2Name": "Font Size",
+      "ap1ID": "id-153",
+      "ap2ID": "id-142"
+    },
+    {
+      "ap2Name": "x",
+      "ap1ID": "id-153",
+      "ap2ID": "id-163"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-157",
+      "ap2ID": "id-167"
+    },
+    {
+      "ap2Name": "xDist",
+      "ap1ID": "id-163",
+      "ap2ID": "id-157"
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-167",
+      "ap2ID": "id-171"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-171",
+      "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-171",
+      "ap2ID": "id-86"
     }
   ],
   "unitsKey": "Inches",
