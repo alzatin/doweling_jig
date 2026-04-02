@@ -4,6 +4,16 @@
   "y": 0,
   "uniqueID": "id-1",
   "name": "doweling_jig",
+  "ioValues": [
+    {
+      "name": "Width",
+      "ioValue": 10
+    },
+    {
+      "name": "DfromEdge",
+      "ioValue": 10
+    }
+  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -17,9 +27,64 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.27639751552795033,
+      "uniqueID": "id-21",
+      "name": "Width"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.4316770186335404,
+      "uniqueID": "id-25",
+      "name": "DfromEdge"
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.2851182197496523,
+      "y": 0.4782608695652174,
+      "uniqueID": "id-30",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 2,
+          "currentEquation": "2"
+        },
+        {
+          "name": "y length",
+          "ioValue": 2,
+          "currentEquation": "2"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.42906815020862304,
+      "y": 0.3012422360248447,
+      "uniqueID": "id-35",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 0.25,
+          "currentEquation": ".25"
+        }
+      ]
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-30",
+      "ap2ID": "id-35"
+    }
+  ],
   "unitsKey": "Inches",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
